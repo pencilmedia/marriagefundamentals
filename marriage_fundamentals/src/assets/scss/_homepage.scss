@@ -1,0 +1,12 @@
+/* typography.scss */
+
+.pm-hero {
+    min-height: 300px;
+    background: $secondary-color;
+    .col-1, .col-2 {
+        padding: 10px 20px;
+    }
+    .col-2 {
+        background: $primary-color;;
+    }
+}
