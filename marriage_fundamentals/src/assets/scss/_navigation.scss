@@ -1,0 +1,31 @@
+/* navigation.scss */
+
+.pm-nav-bar {
+    height: 130px;
+    margin: 20px 20px 0 20px;
+    margin-top: 20px !important;
+    background: rgba(255, 255, 255, .6);
+    border-bottom: 1px solid $secondary-color;
+    ul {
+        background: none;
+        &.pm-main-navigation {
+            a {
+                color: $accent-color;
+            }
+        }
+    }
+}
+
+.pm-footer {
+    color: $primary-color;
+    font-size: 85%;
+    text-align: center;
+    p {
+        margin: 20px;
+    }
+    .pm-social-media {
+        .fa {
+            margin-left: 10px;
+        }
+    }
+}

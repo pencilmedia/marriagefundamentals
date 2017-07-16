@@ -1,0 +1,11 @@
+/* common.scss */
+
+body {
+    background: $secondary-color;
+}
+main {
+    margin: 0 20px 20px 20px;
+    height: calc(100vh - 170px) !important;
+    background: rgba(255, 255, 255, .6);
+    overflow: auto !important;
+}
