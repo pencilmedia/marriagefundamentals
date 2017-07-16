@@ -16,7 +16,8 @@ main {
     button {
         width: 10px;
         height: 10px;
-        background-color: $accent-color;
+        background: transparent;
+        border: 1px solid $accent-color;
         &.is-active {
             background-color: $border-color;
         }

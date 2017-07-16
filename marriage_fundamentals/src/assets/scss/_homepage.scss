@@ -45,8 +45,8 @@
         }
     }
     .col-2 {
-        .grid-y {
-            .cell {
+        .grid-frame {
+            > .cell {
                 height: 50%;
                 &.pm-bucket {
                     border-top: 1px solid $secondary-color;
