@@ -9,3 +9,16 @@ main {
     background: rgba(255, 255, 255, .6);
     overflow: auto !important;
 }
+
+.orbit-bullets {
+    text-align: left;
+    padding-left: 20px;
+    button {
+        width: 10px;
+        height: 10px;
+        background-color: $accent-color;
+        &.is-active {
+            background-color: $border-color;
+        }
+    }
+}
