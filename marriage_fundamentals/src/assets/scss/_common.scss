@@ -2,6 +2,7 @@
 
 body {
     background: $secondary-color;
+    background: linear-gradient(#F2F2DF, #D3D3B2);
 }
 main {
     margin: 0 20px 20px 20px;
@@ -9,7 +10,14 @@ main {
     background: rgba(255, 255, 255, .6);
     overflow: auto !important;
 }
-
+a {
+    &:hover {
+        //text-decoration: underline;
+        color: $accent-color;
+        border-bottom: 1px solid $accent-color;
+        padding-bottom: 1px;
+    }
+}
 .orbit-bullets {
     text-align: left;
     padding-left: 20px;
@@ -17,9 +25,38 @@ main {
         width: 10px;
         height: 10px;
         background: transparent;
-        border: 1px solid $accent-color;
+        border: 1px solid $border-color;
         &.is-active {
             background-color: $border-color;
         }
+    }
+}
+.pm-bucket {
+    font-size: 95%;
+    padding: 20px 40px;
+    color: $white;
+    border: 1px solid $secondary-color;
+    background-size: contain;
+    text-shadow: 0 1px 0 $black;
+    h3 {
+        .fa {
+            margin-left: 10px;
+        }
+    }
+    &.pm-bucket__schedule {
+        background: $primary-color url('../../assets/img/schedule_heart_faded.png') no-repeat left top;
+    }
+    &.pm-bucket__signup {
+        background: $accent-color url('../../assets/img/couple_hearts_faded.png') no-repeat right top;
+    }
+    &.pm-bucket__students {
+        color: $accent-color;
+        text-shadow: 0 1px 0 $white;
+        background: $border-color url('../../assets/img/couple_students_faded.png') no-repeat left top;
+    }
+}
+.secondary-page {
+    .pm-content {
+        padding: 20px;
     }
 }

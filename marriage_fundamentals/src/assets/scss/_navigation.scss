@@ -1,31 +1,76 @@
 /* navigation.scss */
 
 .pm-nav-bar {
-    height: 130px;
+    min-height: 130px;
     margin: 20px 20px 0 20px;
     margin-top: 20px !important;
-    background: rgba(255, 255, 255, .6);
+
     border-bottom: 1px solid $secondary-color;
+    background: rgba(255, 255, 255, .6);
     ul {
         background: none;
         &.pm-main-navigation {
             a {
                 color: $accent-color;
+                font-weight: 600;
+                &:hover {
+                    color: $tertiary-color;
+                    border-bottom: none;
+                }
             }
         }
     }
 }
-
+@media screen and (max-width: 40em) {
+    .pm-nav-bar {
+        .top-bar-left {
+            ul {
+                li {
+                    text-align: center;
+                }
+            }
+            .logo-mf {
+                width: 80%;
+            }
+        }
+        .top-bar-right {
+            ul {
+                li {
+                    padding-left: 20px;
+                }
+            }
+        }
+    }
+}
 .pm-footer {
+    margin-top: 40px;
+    text-align: center;
     color: $primary-color;
     font-size: 85%;
-    text-align: center;
     p {
         margin: 20px;
     }
     .pm-social-media {
-        .fa {
-            margin-left: 10px;
+        a {
+            margin-right: 5px;
+            margin-left: 5px;
+            text-align: center;
         }
+    }
+}
+.homepage {
+    .pm-footer {
+        position: static;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+}
+.secondary-page {
+    .pm-footer {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
     }
 }
